@@ -2,12 +2,12 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 
 export default function BottomNav() {
-  const pathname = usePathname();
+  const pathname = useLocation().pathname;
 
   const navItems = [
-    { label: "Learn", href: "/learn" as const, icon: "🍎" },
-    { label: "World", href: "/world" as const, icon: "🌍" },
-    { label: "Garden", href: "/garden" as const, icon: "🌿" },
+    { label: "Learn", to: "/learn" as const, icon: "🍎" },
+    { label: "World", to: "/world" as const, icon: "🌍" },
+    { label: "Garden", to: "/garden" as const, icon: "🌿" },
   ];
 
   return (
