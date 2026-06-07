@@ -1,6 +1,4 @@
-"use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 // ── Նուռ (Nuri) — NUR Lingo's redesigned pomegranate mascot ──────────────────
 // Uses the provided PNG designs for different emotions.
