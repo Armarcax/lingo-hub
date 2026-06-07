@@ -159,12 +159,11 @@ export default function Nuri({
         >💭</motion.div>
       )}
 
-      <Image 
+      <img 
         src={getPngPath(mood)} 
         alt={`Nuri mascot - ${mood}`} 
         width={size} 
         height={size}
-        priority={mood === "happy" || mood === "idle"}
       />
 
       {/* Sad Tear Effect */}
