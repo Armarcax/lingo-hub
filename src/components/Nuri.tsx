@@ -89,15 +89,15 @@ export default function Nuri({
   const getTransition = () => {
     switch (mood) {
       case "excited":
-        return { duration: 0.5, repeat: Infinity, ease: "easeInOut" };
+        return { duration: 0.5, repeat: Infinity, ease: "easeInOut" as const };
       case "happy":
-        return { duration: 0.6, repeat: Infinity, ease: "easeInOut" };
+        return { duration: 0.6, repeat: Infinity, ease: "easeInOut" as const };
       case "celebrating":
-        return { duration: 1, repeat: Infinity, ease: "linear" };
+        return { duration: 1, repeat: Infinity, ease: "linear" as const };
       case "sad":
         return { duration: 2, repeat: Infinity };
       default:
-        return { duration: 3, repeat: Infinity, ease: "easeInOut" };
+        return { duration: 3, repeat: Infinity, ease: "easeInOut" as const };
     }
   };
 
