@@ -14,9 +14,9 @@ export default function BottomNav() {
     <nav className="fixed bottom-0 left-0 right-0 z-50 px-6 pb-8 pt-4 bg-black/80 backdrop-blur-xl border-t border-white/10">
       <div className="max-w-md mx-auto flex justify-around items-center">
         {navItems.map((item) => {
-          const isActive = pathname === item.href;
+          const isActive = pathname === item.to;
           return (
-            <Link key={item.href} href={item.href} className="relative group">
+            <Link key={item.to} to={item.to} className="relative group">
               <div className="flex flex-col items-center gap-1">
                 <span className={`text-2xl transition-transform ${isActive ? 'scale-125' : 'group-hover:scale-110 opacity-50'}`}>
                   {item.icon}
