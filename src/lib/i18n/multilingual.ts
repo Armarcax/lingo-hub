@@ -608,7 +608,10 @@ const RU_EN_LESSONS: MultiLesson[] = [
   { id: "ruen_l5", unitId: "u2", title: { ru: "Спорт", hy: "Սպորտ", en: "Sport" }, description: { ru: "Игры", hy: "Խաղեր", en: "Games" }, estimatedMinutes: 5, hayqTotal: 50, exercises: [] }
 ];
 
-// Helper to get lessons for a pair
+import { generateCurriculumForPair } from "../content/generator";
+
+// Helper to get lessons for a pair — merges legacy hand-authored lessons
+// with the unified ContentLesson database via the generator.
 export function getLessonsForPair(pair: LangPair): { units: MultiUnit[]; lessons: MultiLesson[] } {
   const map: Record<string, MultiLesson[]> = {
     "hy-en": HY_EN_LESSONS,
@@ -618,12 +621,20 @@ export function getLessonsForPair(pair: LangPair): { units: MultiUnit[]; lessons
     "en-ru": EN_RU_LESSONS,
     "ru-en": RU_EN_LESSONS,
   };
-  
-  const lessons = map[pair] || [];
-  return {
-    units: MULTI_UNITS.filter(u => lessons.some(l => l.unitId === u.id)),
-    lessons
-  };
+
+  const legacyLessons = map[pair] || [];
+  const generated = generateCurriculumForPair(pair);
+
+  const seen = new Set(generated.lessons.map(l => l.id));
+  const lessons = [...generated.lessons, ...legacyLessons.filter(l => !seen.has(l.id))];
+
+  const unitMap = new Map<string, MultiUnit>();
+  for (const u of [...generated.units, ...MULTI_UNITS]) {
+    if (!unitMap.has(u.id)) unitMap.set(u.id, u);
+  }
+  const units = Array.from(unitMap.values()).filter(u => lessons.some(l => l.unitId === u.id));
+
+  return { units, lessons };
 }
 
 export function getLessonById(pair: LangPair, lessonId: string): MultiLesson | null {
