@@ -5,9 +5,9 @@ export default function BottomNav() {
   const pathname = useLocation().pathname;
 
   const navItems = [
-    { label: "Learn", to: "/learn" as const, icon: "🍎" },
+    { label: "Home", to: "/" as const, icon: "🏠" },
     { label: "World", to: "/world" as const, icon: "🌍" },
-    { label: "Garden", to: "/garden" as const, icon: "🌿" },
+    { label: "Setup", to: "/onboarding" as const, icon: "⚙️" },
   ];
 
   return (
