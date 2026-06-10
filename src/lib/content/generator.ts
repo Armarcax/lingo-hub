@@ -146,12 +146,6 @@ function buildListening(
     hayqReward: HAYQ.CORRECT,
   };
 }
-    en: { en: "English", hy: "Armenian", ru: "Russian" },
-    hy: { en: "անգլերեն", hy: "հայերեն", ru: "ռուսերեն" },
-    ru: { en: "английский", hy: "армянский", ru: "русский" },
-  };
-  return names[inLang][target];
-}
 
 // ─── Lesson generator ────────────────────────────────────────────────────────
 
