@@ -81,7 +81,7 @@ function buildExercisesForVocab(
     type: "match_pairs",
     prompt: { en: "Match the pairs", hy: "Կապիր զույգերը", ru: "Сопоставь пары" },
     targetAnswer: "",
-    pairs: vocab.slice(0, 4).map(v => ({ left: v.word[src], right: v.word[tgt] })),
+    pairs: vocab.slice(0, 4).map(v => [v.word[src], v.word[tgt]] as [string, string]),
     hayqReward: 15,
   });
 
