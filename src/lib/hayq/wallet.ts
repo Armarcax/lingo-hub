@@ -20,13 +20,19 @@ export type HayqReason =
   | "exercise_correct"
   | "lesson_perfect"
   | "lesson_complete"
+  | "module_complete"
+  | "daily_lesson"
+  | "perfect_streak"
   | "review_complete"
+  | "streak_milestone"
   | "dialogue_complete"
+  | "conversation_milestone"
   | "world_complete"
   | "streak_bonus"
   | "daily_goal"
   | "purchase_heart_refill"
   | "purchase_streak_freeze"
+  | "transfer"
   | "manual_adjust";
 
 export interface LedgerEntry {
