@@ -170,6 +170,15 @@ function generateExercises(
     if (ex) out.push(ex);
   }
 
+  // 4) Match pairs from vocabulary
+  const mp = buildMatchPairs(lesson, 0, source, target);
+  if (mp) out.push(mp);
+
+  // 5) Listening on a phrase (uses Web Speech API on client)
+  if (lesson.phrases.length > 0) {
+    out.push(buildListening(lesson.phrases[0], 0, lesson, target));
+  }
+
   return out;
 }
 
