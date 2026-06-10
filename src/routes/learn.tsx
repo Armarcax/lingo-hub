@@ -205,8 +205,8 @@ function LearnPage() {
       setNuriSpeech(rline(sc >= 0.98 ? "correct_perfect" : "correct"));
       if (lesson) logMistake(lesson.id, current, nextAttempts, false); // will be ignored on completion if not present
     } else {
-      // Task 2: 3-attempt tolerance
-      if (nextAttempts >= 3) {
+      // Mistake recovery: 4-attempt tolerance (attempts 1-3 retry, 4th reveals explanation)
+      if (nextAttempts >= 4) {
         // Reveal
         setState("revealed");
         setNuriMood("encouraging");
@@ -248,7 +248,7 @@ function LearnPage() {
   }
 
   const isRetryPhase = phase === "retry" && stepIndex >= retryStartIndex;
-  const attemptsLeft = Math.max(0, 3 - attempts);
+  const attemptsLeft = Math.max(0, 4 - attempts);
 
   return (
     <div className="min-h-screen flex flex-col relative text-white bg-[#1a0a0a]">
@@ -281,7 +281,7 @@ function LearnPage() {
           )}
           <h2 className="text-xl md:text-2xl font-bold mb-4">{current.prompt[native] ?? current.prompt["en"]}</h2>
 
-          {state === "incorrect" && attempts < 3 && (
+          {state === "incorrect" && attempts < 4 && (
             <p className="text-amber-300 text-sm mb-3 font-bold">
               Try again — {attemptsLeft} attempt{attemptsLeft === 1 ? "" : "s"} left
             </p>
@@ -346,7 +346,7 @@ function LearnPage() {
               className="flex-1 py-3 bg-blue-600 hover:bg-blue-500 rounded-xl font-bold disabled:opacity-50">
               {state === "submitting" ? "Checking…" : "Check"}
             </button>
-          ) : state === "incorrect" && attempts < 3 ? (
+          ) : state === "incorrect" && attempts < 4 ? (
             <button onClick={retrySameStep}
               className="flex-1 py-3 bg-amber-500 hover:bg-amber-400 text-black rounded-xl font-bold">
               Try Again ({attemptsLeft} left)
