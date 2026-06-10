@@ -107,6 +107,52 @@ function langName(inLang: LangCode, target: LangCode): string {
   return names[inLang][target];
 }
 
+function buildMatchPairs(
+  lesson: ContentLesson, idx: number, source: LangCode, target: LangCode
+): MultiExercise | null {
+  const picks = shuffle(lesson.vocabulary).slice(0, 4);
+  if (picks.length < 3) return null;
+  const pairs: Array<[string, string]> = picks.map(v => [v[source], v[target]]);
+  return {
+    id: `${lesson.id}_mp_${idx}`,
+    type: "match_pairs",
+    prompt: {
+      en: "Match the pairs",
+      hy: "Համապատասխանեցրու զույգերը",
+      ru: "Соедините пары",
+    },
+    targetAnswer: pairs.map(p => p.join("=")).join("|"),
+    pairs,
+    hayqReward: HAYQ.CORRECT,
+  };
+}
+
+function buildListening(
+  ph: PhraseItem, idx: number, lesson: ContentLesson, target: LangCode
+): MultiExercise {
+  const answer = ph[target];
+  return {
+    id: `${lesson.id}_ls_${idx}`,
+    type: "listening",
+    prompt: {
+      en: "Listen and type what you hear",
+      hy: "Լսիր և գրիր լսածդ",
+      ru: "Послушайте и напишите",
+    },
+    targetAnswer: answer,
+    acceptableAnswers: [answer, ...(ph.alt?.[target] ?? [])],
+    ttsText: answer,
+    ttsLang: target,
+    hayqReward: HAYQ.CORRECT,
+  };
+}
+    en: { en: "English", hy: "Armenian", ru: "Russian" },
+    hy: { en: "անգլերեն", hy: "հայերեն", ru: "ռուսերեն" },
+    ru: { en: "английский", hy: "армянский", ru: "русский" },
+  };
+  return names[inLang][target];
+}
+
 // ─── Lesson generator ────────────────────────────────────────────────────────
 
 function generateExercises(
