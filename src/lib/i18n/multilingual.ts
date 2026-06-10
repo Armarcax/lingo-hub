@@ -8,12 +8,17 @@ export type LangPair = "en-hy" | "hy-en" | "ru-hy" | "hy-ru" | "en-ru" | "ru-en"
 
 export interface MultiExercise {
   id: string;
-  type: "multiple_choice" | "translate" | "word_order";
+  type: "multiple_choice" | "translate" | "word_order" | "match_pairs" | "listening";
   prompt: Record<LangCode, string>;
   targetAnswer: string;
   acceptableAnswers?: string[];
   options?: string[];
   words?: string[];
+  /** match_pairs: list of [left, right] pairs the user must connect */
+  pairs?: Array<[string, string]>;
+  /** listening: text to be spoken via Web Speech API */
+  ttsText?: string;
+  ttsLang?: LangCode;
   hint?: Record<LangCode, string>;
   hayqReward?: number;
 }
