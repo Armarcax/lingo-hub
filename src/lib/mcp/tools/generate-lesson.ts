@@ -1,7 +1,8 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
 import { TOPICS } from "@/lib/curriculum/topics";
-import { buildLesson } from "@/lib/curriculum/builder";
+import { buildCourse } from "@/lib/curriculum/builder";
+import type { LangPair } from "@/lib/i18n/multilingual";
 
 const Lang = z.enum(["en", "hy", "ru"]);
 
@@ -9,7 +10,7 @@ export default defineTool({
   name: "generate_lesson",
   title: "Generate a lesson",
   description:
-    "Generate a NUR Lingo lesson (vocabulary + phrases + exercises) for a given topic and language pair.",
+    "Generate the first NUR Lingo lesson (vocabulary + exercises) for a given topic and language pair.",
   inputSchema: {
     topicId: z
       .string()
@@ -26,7 +27,16 @@ export default defineTool({
         isError: true,
       };
     }
-    const lesson = buildLesson(topic, source, target, 0);
+    const pair = `${source}-${target}` as LangPair;
+    const course = buildCourse(pair);
+    const mod = course.modules.find((m) => m.id.endsWith(`_${topicId}`));
+    const lesson = mod?.lessons[0];
+    if (!lesson) {
+      return {
+        content: [{ type: "text", text: `No lesson available for '${topicId}' in ${pair}.` }],
+        isError: true,
+      };
+    }
     return {
       content: [{ type: "text", text: JSON.stringify(lesson, null, 2) }],
       structuredContent: { lesson },

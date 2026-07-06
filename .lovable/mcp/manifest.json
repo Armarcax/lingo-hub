@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "nur-lingo-mcp",
+      "version": "0.1.0",
+      "title": "NUR Lingo MCP"
+    },
+    "tools": [
+      {
+        "name": "translate_word",
+        "title": "Translate a word",
+        "description": "Translate a single word or short phrase between English (en), Armenian (hy), and Russian (ru) using the NUR Lingo dictionary.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Word or short phrase to translate."
+            },
+            "source": {
+              "type": "string",
+              "enum": [
+                "en",
+                "hy",
+                "ru"
+              ],
+              "description": "Source language code: en | hy | ru."
+            },
+            "target": {
+              "type": "string",
+              "enum": [
+                "en",
+                "hy",
+                "ru"
+              ],
+              "description": "Target language code: en | hy | ru."
+            }
+          },
+          "required": [
+            "text",
+            "source",
+            "target"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_topics",
+        "title": "List curriculum topics",
+        "description": "List every NUR Lingo curriculum topic (module) with its icon and trilingual titles (en/hy/ru).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "generate_lesson",
+        "title": "Generate a lesson",
+        "description": "Generate the first NUR Lingo lesson (vocabulary + exercises) for a given topic and language pair.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "topicId": {
+              "type": "string",
+              "description": "Topic id from list_topics (e.g. 'food_dining', 'family')."
+            },
+            "source": {
+              "type": "string",
+              "enum": [
+                "en",
+                "hy",
+                "ru"
+              ],
+              "description": "Learner's native language code (en | hy | ru)."
+            },
+            "target": {
+              "type": "string",
+              "enum": [
+                "en",
+                "hy",
+                "ru"
+              ],
+              "description": "Language being learned (en | hy | ru)."
+            }
+          },
+          "required": [
+            "topicId",
+            "source",
+            "target"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
