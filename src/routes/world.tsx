@@ -249,6 +249,10 @@ function SnakePath({
           </motion.button>
         );
       })}
+    </div>
+  );
+}
+
 
 function Stat({ icon, value, color }: { icon: string; value: string | number; color?: string }) {
   return (
