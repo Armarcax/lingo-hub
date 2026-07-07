@@ -143,11 +143,12 @@
   }
 }
 
-/* NUR Lingo custom tokens */
+/* NUR Lingo brand tokens (non-semantic — do NOT override --background/--card/--border here;
+   those live in :root / .dark above and drive light/dark themes).
+   --color-bg/--color-border kept as aliases to semantic tokens so legacy inline
+   styles keep working while still respecting theme. */
 :root {
-  --color-bg: #0a0a0a;
-  --color-card: rgba(255, 255, 255, 0.05);
-  --color-border: rgba(255, 255, 255, 0.1);
+  --color-bg: var(--background);
   --hy-red: #D90012;
   --hy-orange: #F2A800;
   --hy-blue: #0033A0;
@@ -182,3 +183,10 @@
 .font-armenian {
   font-family: 'Noto Serif Armenian', serif;
 }
+
+/* Snake path animations */
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-bob { animation: bob 2.2s ease-in-out infinite; }
