@@ -310,14 +310,29 @@ function LearnPage() {
               />
             ) : current.type === "multiple_choice" && current.options ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {current.options.map(opt => (
-                  <button key={opt}
-                    disabled={state === "submitting" || state === "correct" || state === "revealed"}
-                    onClick={() => setUserAnswer(opt)}
-                    className={`p-3 md:p-4 rounded-xl border-2 text-left transition ${userAnswer === opt ? 'border-blue-500 bg-blue-500/10' : 'border-white/10 hover:border-white/30'}`}>
-                    {opt}
-                  </button>
-                ))}
+                {current.options.map((opt, i) => {
+                  const isPicked = userAnswer === opt;
+                  const isCorrectAnswer = opt === current.targetAnswer;
+                  const showResult = state === "correct" || state === "revealed";
+                  const showWrong = state === "incorrect" && isPicked;
+                  const cls = showResult && isCorrectAnswer
+                    ? "border-green-500 bg-green-500/15 text-green-100"
+                    : showResult && isPicked && !isCorrectAnswer
+                      ? "border-red-500 bg-red-500/15 text-red-100 line-through opacity-70"
+                      : showWrong
+                        ? "border-red-500 bg-red-500/10"
+                        : isPicked
+                          ? "border-blue-500 bg-blue-500/10"
+                          : "border-white/10 hover:border-white/30";
+                  return (
+                    <button key={`${current.id}-opt-${i}`}
+                      disabled={state === "submitting" || state === "correct" || state === "revealed"}
+                      onClick={() => setUserAnswer(opt)}
+                      className={`p-3 md:p-4 rounded-xl border-2 text-left transition ${cls}`}>
+                      {opt}
+                    </button>
+                  );
+                })}
               </div>
             ) : (
               <textarea value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
