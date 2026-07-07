@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import Nuri, { NuriSpeech } from "@/components/Nuri";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -147,9 +148,7 @@ function Home() {
       </section>
 
       <div className="h-1.5 w-full flag-stripe" />
-      <footer className="px-6 py-6 text-center text-white/20 text-xs">
-        NUR Lingo · Երևան, Հայաստան 🇦🇲 · Հայկական AI Լեզվի Հարթակ
-      </footer>
+      <Footer />
     </main>
   );
 }
