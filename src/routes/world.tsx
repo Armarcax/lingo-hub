@@ -134,30 +134,13 @@ function WorldPage() {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 justify-items-center">
-                    {lessons.map((l) => {
-                      const crowns = rewards.crowns[l.id] || 0;
-                      const isReview = l.id.startsWith("review_");
-                      return (
-                        <motion.button
-                          key={l.id}
-                          whileHover={{ scale: 1.08 }}
-                          whileTap={{ scale: 0.95 }}
-                          onClick={() => startLesson(l)}
-                          className="relative group"
-                          title={l.title[native]}>
-                          {crowns > 0 && (
-                            <div className="absolute -top-1 -right-1 w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center text-[10px] z-10 shadow">⭐</div>
-                          )}
-                          <div className={`w-16 h-16 md:w-20 md:h-20 rounded-[35%_65%_70%_30%/30%_30%_70%_70%] flex items-center justify-center text-3xl shadow-2xl border-4 ${crowns > 0 ? 'border-yellow-400' : isReview ? 'border-purple-400/60' : 'border-white/20'}`}
-                            style={{ background: `linear-gradient(135deg, ${isReview ? '#9333ea' : unit.colorFrom}, ${isReview ? '#581c87' : unit.colorTo})` }}>
-                            <span className="drop-shadow-lg">{isReview ? "🏆" : unit.iconEmoji}</span>
-                          </div>
-                          <p className="mt-2 text-[10px] font-bold text-white/70 max-w-[80px] truncate">{l.title[native]}</p>
-                        </motion.button>
-                      );
-                    })}
-                  </div>
+                  <SnakePath
+                    lessons={lessons}
+                    unit={unit}
+                    crowns={rewards.crowns}
+                    onStart={startLesson}
+                    native={native}
+                  />
                 </div>
               );
             })}
@@ -168,6 +151,104 @@ function WorldPage() {
     </div>
   );
 }
+
+// ── Duolingo-style snake path per unit ──────────────────────────────────────
+function SnakePath({
+  lessons,
+  unit,
+  crowns,
+  onStart,
+  native,
+}: {
+  lessons: MultiLesson[];
+  unit: MultiUnit;
+  crowns: Record<string, number>;
+  onStart: (l: MultiLesson) => void;
+  native: LangCode;
+}) {
+  const STEP_Y = 110;
+  const AMPLITUDE = 110; // horizontal swing
+  const WIDTH = 320;
+  const centerX = WIDTH / 2;
+  const height = Math.max(120, lessons.length * STEP_Y + 40);
+
+  // Sine-wave offset per lesson index
+  const nodeX = (i: number) =>
+    centerX + Math.sin((i / Math.max(1, lessons.length - 1)) * Math.PI * (lessons.length / 3)) * AMPLITUDE;
+  const nodeY = (i: number) => 40 + i * STEP_Y;
+
+  // Build a smooth path through all nodes
+  const pathD = lessons.reduce((acc, _, i) => {
+    const x = nodeX(i);
+    const y = nodeY(i);
+    if (i === 0) return `M ${x} ${y}`;
+    const prevX = nodeX(i - 1);
+    const prevY = nodeY(i - 1);
+    const midY = (prevY + y) / 2;
+    return `${acc} C ${prevX} ${midY}, ${x} ${midY}, ${x} ${y}`;
+  }, "");
+
+  // Find first non-completed lesson index for "current" indicator
+  const currentIdx = lessons.findIndex(l => (crowns[l.id] || 0) === 0);
+
+  return (
+    <div className="relative mx-auto" style={{ width: WIDTH, height }}>
+      <svg className="absolute inset-0 pointer-events-none" width={WIDTH} height={height}>
+        <path
+          d={pathD}
+          fill="none"
+          stroke={unit.colorFrom}
+          strokeOpacity={0.35}
+          strokeWidth={4}
+          strokeDasharray="8 10"
+          strokeLinecap="round"
+        />
+      </svg>
+      {lessons.map((l, i) => {
+        const done = (crowns[l.id] || 0) > 0;
+        const isCurrent = i === currentIdx;
+        const isReview = l.id.startsWith("review_");
+        const unlocked = i === 0 || (crowns[lessons[i - 1].id] || 0) > 0;
+        const x = nodeX(i);
+        const y = nodeY(i);
+        return (
+          <motion.button
+            key={l.id}
+            whileHover={unlocked ? { scale: 1.08 } : {}}
+            whileTap={unlocked ? { scale: 0.95 } : {}}
+            onClick={() => unlocked && onStart(l)}
+            disabled={!unlocked}
+            className={`absolute -translate-x-1/2 -translate-y-1/2 group ${isCurrent ? "animate-bob" : ""}`}
+            style={{ left: x, top: y }}
+            title={l.title[native]}
+          >
+            {done && (
+              <div className="absolute -top-1 -right-1 w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center text-[10px] z-10 shadow">⭐</div>
+            )}
+            <div
+              className={`w-16 h-16 md:w-18 md:h-18 rounded-[35%_65%_70%_30%/30%_30%_70%_70%] flex items-center justify-center text-3xl shadow-2xl border-4 ${
+                !unlocked
+                  ? "border-white/10 opacity-40 grayscale"
+                  : done
+                    ? "border-yellow-400"
+                    : isReview
+                      ? "border-purple-400/60"
+                      : "border-white/20"
+              }`}
+              style={{
+                background: unlocked
+                  ? `linear-gradient(135deg, ${isReview ? "#9333ea" : unit.colorFrom}, ${isReview ? "#581c87" : unit.colorTo})`
+                  : "rgba(255,255,255,0.05)",
+              }}
+            >
+              <span className="drop-shadow-lg">{!unlocked ? "🔒" : isReview ? "🏆" : unit.iconEmoji}</span>
+            </div>
+            <p className="mt-1 text-[10px] font-bold text-white/70 max-w-[90px] truncate text-center">
+              {l.title[native]}
+            </p>
+          </motion.button>
+        );
+      })}
 
 function Stat({ icon, value, color }: { icon: string; value: string | number; color?: string }) {
   return (
