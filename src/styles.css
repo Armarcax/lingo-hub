@@ -144,8 +144,11 @@
 }
 
 /* NUR Lingo brand tokens (non-semantic — do NOT override --background/--card/--border here;
-   those live in :root / .dark above and drive light/dark themes). */
+   those live in :root / .dark above and drive light/dark themes).
+   --color-bg/--color-border kept as aliases to semantic tokens so legacy inline
+   styles keep working while still respecting theme. */
 :root {
+  --color-bg: var(--background);
   --hy-red: #D90012;
   --hy-orange: #F2A800;
   --hy-blue: #0033A0;
