@@ -1,0 +1,1874 @@
+[
+  {
+    "id": "900001",
+    "hy": "tak",
+    "en": "tak",
+    "ru": "возраст",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900002",
+    "hy": "odyanаvakayan",
+    "en": "odyanаvakayan",
+    "ru": "аэропорт",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900003",
+    "hy": "patasхan",
+    "en": "patasхan",
+    "ru": "ответ",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900004",
+    "hy": "khndzor",
+    "en": "khndzor",
+    "ru": "яблоко",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900005",
+    "hy": "april",
+    "en": "april",
+    "ru": "апрель",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900006",
+    "hy": "bazuk",
+    "en": "bazuk",
+    "ru": "рука",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900007",
+    "hy": "arvest",
+    "en": "arvest",
+    "ru": "искусство",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900008",
+    "hy": "nkardrich",
+    "en": "nkardrich",
+    "ru": "художник",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900009",
+    "hy": "ogostos",
+    "en": "ogostos",
+    "ru": "август",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900010",
+    "hy": "ashun",
+    "en": "ashun",
+    "ru": "осень",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900011",
+    "hy": "manuk",
+    "en": "manuk",
+    "ru": "младенец",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900012",
+    "hy": "paylak",
+    "en": "paylak",
+    "ru": "сумка",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900013",
+    "hy": "arj",
+    "en": "arj",
+    "ru": "медведь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900014",
+    "hy": "hеtrikord",
+    "en": "hеtrikord",
+    "ru": "велосипед",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900015",
+    "hy": "tsitеrnak",
+    "en": "tsitеrnak",
+    "ru": "птица",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900016",
+    "hy": "hats",
+    "en": "hats",
+    "ru": "хлеб",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900017",
+    "hy": "kamurj",
+    "en": "kamurj",
+    "ru": "мост",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900018",
+    "hy": "շականakaguyun",
+    "en": "շականakaguyun",
+    "ru": "коричневый",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900019",
+    "hy": "avtobus",
+    "en": "avtobus",
+    "ru": "автобус",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900020",
+    "hy": "karagh",
+    "en": "karagh",
+    "ru": "масло",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900021",
+    "hy": "gnel",
+    "en": "gnel",
+    "ru": "купить",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900022",
+    "hy": "lus'anakaritch",
+    "en": "lus'anakaritch",
+    "ru": "камера",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900023",
+    "hy": "mashin",
+    "en": "mashin",
+    "ru": "машина",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900024",
+    "hy": "katу",
+    "en": "katу",
+    "ru": "кот",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900025",
+    "hy": "panir",
+    "en": "panir",
+    "ru": "сыр",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900026",
+    "hy": "ashkharagets",
+    "en": "ashkharagets",
+    "ru": "повар",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900027",
+    "hy": "yegeghetsi",
+    "en": "yegeghetsi",
+    "ru": "церковь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900028",
+    "hy": "kaghak",
+    "en": "kaghak",
+    "ru": "город",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900029",
+    "hy": "ampegh",
+    "en": "ampegh",
+    "ru": "облако",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900030",
+    "hy": "palt",
+    "en": "palt",
+    "ru": "пальто",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900031",
+    "hy": "surj",
+    "en": "surj",
+    "ru": "кофе",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900032",
+    "hy": "hamakargich",
+    "en": "hamakargich",
+    "ru": "компьютер",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900033",
+    "hy": "yerkir",
+    "en": "yerkir",
+    "ru": "страна",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900034",
+    "hy": "kov",
+    "en": "kov",
+    "ru": "корова",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900035",
+    "hy": "lal",
+    "en": "lal",
+    "ru": "плакать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900036",
+    "hy": "parel",
+    "en": "parel",
+    "ru": "танцевать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900037",
+    "hy": "dugh",
+    "en": "dugh",
+    "ru": "дочь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900038",
+    "hy": "mah",
+    "en": "mah",
+    "ru": "смерть",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900039",
+    "hy": "dektember",
+    "en": "dektember",
+    "ru": "декабрь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900040",
+    "hy": "manal",
+    "en": "manal",
+    "ru": "умереть",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900041",
+    "hy": "dzhvar",
+    "en": "dzhvar",
+    "ru": "трудный",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900042",
+    "hy": "bzhishk",
+    "en": "bzhishk",
+    "ru": "врач",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900043",
+    "hy": "shun",
+    "en": "shun",
+    "ru": "собака",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900044",
+    "hy": "yeraz",
+    "en": "yeraz",
+    "ru": "мечта",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900045",
+    "hy": "zoraguyn",
+    "en": "zoraguyn",
+    "ru": "платье",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900046",
+    "hy": "khmel",
+    "en": "khmel",
+    "ru": "пить",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900047",
+    "hy": "халь",
+    "en": "халь",
+    "ru": "лёгкий",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900048",
+    "hy": "utel",
+    "en": "utel",
+    "ru": "есть",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900049",
+    "hy": "dzu",
+    "en": "dzu",
+    "ru": "яйцо",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900050",
+    "hy": "p'igh",
+    "en": "p'igh",
+    "ru": "слон",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900051",
+    "hy": "ynhandis",
+    "en": "ynhandis",
+    "ru": "инженер",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900052",
+    "hy": "qann",
+    "en": "qann",
+    "ru": "экзамен",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900053",
+    "hy": "yndanik",
+    "en": "yndanik",
+    "ru": "семья",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900054",
+    "hy": "p'etruvar",
+    "en": "p'etruvar",
+    "ru": "февраль",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900055",
+    "hy": "gtel",
+    "en": "gtel",
+    "ru": "найти",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900056",
+    "hy": "motel",
+    "en": "motel",
+    "ru": "палец",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900057",
+    "hy": "dzuk",
+    "en": "dzuk",
+    "ru": "рыба",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900058",
+    "hy": "muk",
+    "en": "muk",
+    "ru": "туман",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900059",
+    "hy": "antar",
+    "en": "antar",
+    "ru": "лес",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900060",
+    "hy": "anvar",
+    "en": "anvar",
+    "ru": "бесплатный",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900061",
+    "hy": "urbat",
+    "en": "urbat",
+    "ru": "пятница",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900062",
+    "hy": "khagha",
+    "en": "khagha",
+    "ru": "игра",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900063",
+    "hy": "ashkharagitutyun",
+    "en": "ashkharagitutyun",
+    "ru": "география",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900064",
+    "hy": "akankner",
+    "en": "akankner",
+    "ru": "очки",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900065",
+    "hy": "tsutsаparutyan",
+    "en": "tsutsаparutyan",
+    "ru": "до свидания",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900066",
+    "hy": "papik",
+    "en": "papik",
+    "ru": "дедушка",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900067",
+    "hy": "tatik",
+    "en": "tatik",
+    "ru": "бабушка",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900068",
+    "hy": "khot",
+    "en": "khot",
+    "ru": "трава",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900069",
+    "hy": "մոխրaguyun",
+    "en": "մոխրaguyun",
+    "ru": "серый",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900070",
+    "hy": "gorgegh",
+    "en": "gorgegh",
+    "ru": "шапка",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900071",
+    "hy": "aроghjanutyan",
+    "en": "aроghjanutyan",
+    "ru": "здоровье",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900072",
+    "hy": "ognel",
+    "en": "ognel",
+    "ru": "помочь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900073",
+    "hy": "ognutyun",
+    "en": "ognutyun",
+    "ru": "помощь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900074",
+    "hy": "patmutyun",
+    "en": "patmutyun",
+    "ru": "история",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900075",
+    "hy": "tanatun ashkhatanq",
+    "en": "tanatun ashkhatanq",
+    "ru": "домашнее задание",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900076",
+    "hy": "dzі",
+    "en": "dzі",
+    "ru": "лошадь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900077",
+    "hy": "hivandanots",
+    "en": "hivandanots",
+    "ru": "больница",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900078",
+    "hy": "zhаm",
+    "en": "zhаm",
+    "ru": "час",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900079",
+    "hy": "amusnu",
+    "en": "amusnu",
+    "ru": "муж",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900080",
+    "hy": "kegh",
+    "en": "kegh",
+    "ru": "лёд",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900081",
+    "hy": "gaghapar",
+    "en": "gaghapar",
+    "ru": "идея",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900082",
+    "hy": "lratu",
+    "en": "lratu",
+    "ru": "интернет",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900083",
+    "hy": "hunvar",
+    "en": "hunvar",
+    "ru": "январь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900084",
+    "hy": "hyut",
+    "en": "hyut",
+    "ru": "сок",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900085",
+    "hy": "hulis",
+    "en": "hulis",
+    "ru": "июль",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900086",
+    "hy": "hunisi",
+    "en": "hunisi",
+    "ru": "июнь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900087",
+    "hy": "lezу",
+    "en": "lezу",
+    "ru": "язык",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900088",
+    "hy": "tsaghel",
+    "en": "tsaghel",
+    "ru": "смеяться",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900089",
+    "hy": "iravaban",
+    "en": "iravaban",
+    "ru": "адвокат",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900090",
+    "hy": "sovorel",
+    "en": "sovorel",
+    "ru": "учиться",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900091",
+    "hy": "vorig",
+    "en": "vorig",
+    "ru": "нога",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900092",
+    "hy": "dас",
+    "en": "dас",
+    "ru": "урок",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900093",
+    "hy": "matenadaran",
+    "en": "matenadaran",
+    "ru": "библиотека",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900094",
+    "hy": "kyanq",
+    "en": "kyanq",
+    "ru": "жизнь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900095",
+    "hy": "aruutj",
+    "en": "aruutj",
+    "ru": "лев",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900096",
+    "hy": "lusnel",
+    "en": "lusnel",
+    "ru": "слушать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900097",
+    "hy": "aprel",
+    "en": "aprel",
+    "ru": "жить",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900098",
+    "hy": "yerkar",
+    "en": "yerkar",
+    "ru": "длинный",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900099",
+    "hy": "gerel",
+    "en": "gerel",
+    "ru": "потерять",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900100",
+    "hy": "sirel",
+    "en": "sirel",
+    "ru": "любить",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900101",
+    "hy": "mart",
+    "en": "mart",
+    "ru": "март",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900102",
+    "hy": "shuka",
+    "en": "shuka",
+    "ru": "рынок",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900103",
+    "hy": "matmatika",
+    "en": "matmatika",
+    "ru": "математика",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900104",
+    "hy": "mayis",
+    "en": "mayis",
+    "ru": "май",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900105",
+    "hy": "mis",
+    "en": "mis",
+    "ru": "мясо",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900106",
+    "hy": "haghordagir",
+    "en": "haghordagir",
+    "ru": "сообщение",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900107",
+    "hy": "kshor",
+    "en": "kshor",
+    "ru": "молоко",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900108",
+    "hy": "rope",
+    "en": "rope",
+    "ru": "минута",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900109",
+    "hy": "yerkaushab'ti",
+    "en": "yerkaushab'ti",
+    "ru": "понедельник",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900110",
+    "hy": "pegh",
+    "en": "pegh",
+    "ru": "деньги",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900111",
+    "hy": "ler",
+    "en": "ler",
+    "ru": "гора",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900112",
+    "hy": "yeraspasilyutin",
+    "en": "yeraspasilyutin",
+    "ru": "фильм",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900113",
+    "hy": "erаzhshtutyin",
+    "en": "erаzhshtutyin",
+    "ru": "музыка",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900114",
+    "hy": "anun",
+    "en": "anun",
+    "ru": "имя",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900115",
+    "hy": "noember",
+    "en": "noember",
+    "ru": "ноябрь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900116",
+    "hy": "okianos",
+    "en": "okianos",
+    "ru": "океан",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900117",
+    "hy": "hoktember",
+    "en": "hoktember",
+    "ru": "октябрь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900118",
+    "hy": "iugh",
+    "en": "iugh",
+    "ru": "масло",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900119",
+    "hy": "narinj",
+    "en": "narinj",
+    "ru": "апельсин",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900120",
+    "hy": "vartik",
+    "en": "vartik",
+    "ru": "брюки",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900121",
+    "hy": "tsnoghner",
+    "en": "tsnoghner",
+    "ru": "родители",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900122",
+    "hy": "park",
+    "en": "park",
+    "ru": "парк",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900123",
+    "hy": "gakhtnabarer",
+    "en": "gakhtnabarer",
+    "ru": "пароль",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900124",
+    "hy": "khaghaghutyun",
+    "en": "khaghaghutyun",
+    "ru": "мир",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900125",
+    "hy": "herakhus",
+    "en": "herakhus",
+    "ru": "телефон",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900126",
+    "hy": "khoz",
+    "en": "khoz",
+    "ru": "свинья",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900127",
+    "hy": "vertavorich",
+    "en": "vertavorich",
+    "ru": "пилот",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900128",
+    "hy": "odyun",
+    "en": "odyun",
+    "ru": "самолёт",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900129",
+    "hy": "khelal",
+    "en": "khelal",
+    "ru": "играть",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900130",
+    "hy": "khndrem",
+    "en": "khndrem",
+    "ru": "пожалуйста",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900131",
+    "hy": "votikanutyun",
+    "en": "votikanutyun",
+    "ru": "полиция",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900132",
+    "hy": "akhkhar",
+    "en": "akhkhar",
+    "ru": "бедный",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900133",
+    "hy": "nakhagah",
+    "en": "nakhagah",
+    "ru": "президент",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900134",
+    "hy": "gin",
+    "en": "gin",
+    "ru": "цена",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900135",
+    "hy": "xndrum",
+    "en": "xndrum",
+    "ru": "проблема",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900136",
+    "hy": "մանուշakaguyun",
+    "en": "մանուշakaguyun",
+    "ru": "фиолетовый",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900137",
+    "hy": "harts",
+    "en": "harts",
+    "ru": "вопрос",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900138",
+    "hy": "nap'astakаgi",
+    "en": "nap'astakаgi",
+    "ru": "кролик",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900139",
+    "hy": "anjrev",
+    "en": "anjrev",
+    "ru": "дождь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900140",
+    "hy": "kartsal",
+    "en": "kartsal",
+    "ru": "читать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900141",
+    "hy": "brinj",
+    "en": "brinj",
+    "ru": "рис",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900142",
+    "hy": "heratsun",
+    "en": "heratsun",
+    "ru": "богатый",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900143",
+    "hy": "maten",
+    "en": "maten",
+    "ru": "кольцо",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900144",
+    "hy": "ghet",
+    "en": "ghet",
+    "ru": "река",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900145",
+    "hy": "janаpаr",
+    "en": "janаpаr",
+    "ru": "дорога",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900146",
+    "hy": "siranakаner",
+    "en": "siranakаner",
+    "ru": "комната",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900147",
+    "hy": "varel",
+    "en": "varel",
+    "ru": "бегать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900148",
+    "hy": "agh",
+    "en": "agh",
+    "ru": "соль",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900149",
+    "hy": "avel",
+    "en": "avel",
+    "ru": "песок",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900150",
+    "hy": "shab'at",
+    "en": "shab'at",
+    "ru": "суббота",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900151",
+    "hy": "gitutyun",
+    "en": "gitutyun",
+    "ru": "наука",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900152",
+    "hy": "tsov",
+    "en": "tsov",
+    "ru": "море",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900153",
+    "hy": "vayrkian",
+    "en": "vayrkian",
+    "ru": "секунда",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900154",
+    "hy": "veratsnel",
+    "en": "veratsnel",
+    "ru": "продавать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900155",
+    "hy": "september",
+    "en": "september",
+    "ru": "сентябрь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900156",
+    "hy": "voghi",
+    "en": "voghi",
+    "ru": "овца",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900157",
+    "hy": "nаv",
+    "en": "nаv",
+    "ru": "корабль",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900158",
+    "hy": "velogos",
+    "en": "velogos",
+    "ru": "рубашка",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900159",
+    "hy": "koshikner",
+    "en": "koshikner",
+    "ru": "туфли",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900160",
+    "hy": "kark",
+    "en": "kark",
+    "ru": "короткий",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900161",
+    "hy": "yergel",
+    "en": "yergel",
+    "ru": "петь",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900162",
+    "hy": "yergo",
+    "en": "yergo",
+    "ru": "певец",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900163",
+    "hy": "yerkin",
+    "en": "yerkin",
+    "ru": "небо",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900164",
+    "hy": "kanel",
+    "en": "kanel",
+    "ru": "спать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900165",
+    "hy": "dzav",
+    "en": "dzav",
+    "ru": "змея",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900166",
+    "hy": "dzyun",
+    "en": "dzyun",
+    "ru": "снег",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900167",
+    "hy": "zinvor",
+    "en": "zinvor",
+    "ru": "солдат",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900168",
+    "hy": "ordi",
+    "en": "ordi",
+    "ru": "сын",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900169",
+    "hy": "yeritasardutyan",
+    "en": "yeritasardutyan",
+    "ru": "извини",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900170",
+    "hy": "akhpur",
+    "en": "akhpur",
+    "ru": "суп",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900171",
+    "hy": "sport",
+    "en": "sport",
+    "ru": "спорт",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900172",
+    "hy": "gaghatn",
+    "en": "gaghatn",
+    "ru": "весна",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900173",
+    "hy": "kar",
+    "en": "kar",
+    "ru": "камень",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900174",
+    "hy": "kaghaghakan",
+    "en": "kaghaghakan",
+    "ru": "буря",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900175",
+    "hy": "poghots",
+    "en": "poghots",
+    "ru": "улица",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900176",
+    "hy": "uzhegh",
+    "en": "uzhegh",
+    "ru": "сильный",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900177",
+    "hy": "usanоgh",
+    "en": "usanоgh",
+    "ru": "студент",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900178",
+    "hy": "shakar",
+    "en": "shakar",
+    "ru": "сахар",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900179",
+    "hy": "amarn",
+    "en": "amarn",
+    "ru": "лето",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900180",
+    "hy": "kiraki",
+    "en": "kiraki",
+    "ru": "воскресенье",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900181",
+    "hy": "khosil",
+    "en": "khosil",
+    "ru": "говорить",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900182",
+    "hy": "tey",
+    "en": "tey",
+    "ru": "чай",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900183",
+    "hy": "usutsanel",
+    "en": "usutsanel",
+    "ru": "учить",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900184",
+    "hy": "uсutsich",
+    "en": "uсutsich",
+    "ru": "учитель",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900185",
+    "hy": "jermashchap",
+    "en": "jermashchap",
+    "ru": "температура",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900186",
+    "hy": "տաս",
+    "en": "տաս",
+    "ru": "десять",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900187",
+    "hy": "shnorhakalutyun",
+    "en": "shnorhakalutyun",
+    "ru": "спасибо",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900188",
+    "hy": "hngshab'ti",
+    "en": "hngshab'ti",
+    "ru": "четверг",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900189",
+    "hy": "kaghntavar",
+    "en": "kaghntavar",
+    "ru": "тигр",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900190",
+    "hy": "gnatsin",
+    "en": "gnatsin",
+    "ru": "поезд",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900191",
+    "hy": "shtmarut",
+    "en": "shtmarut",
+    "ru": "правда",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900192",
+    "hy": "yerekshab'ti",
+    "en": "yerekshab'ti",
+    "ru": "вторник",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900193",
+    "hy": "hamalsaran",
+    "en": "hamalsaran",
+    "ru": "университет",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900194",
+    "hy": "gugh",
+    "en": "gugh",
+    "ru": "деревня",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900195",
+    "hy": "ganal",
+    "en": "ganal",
+    "ru": "ходить",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900196",
+    "hy": "ber",
+    "en": "ber",
+    "ru": "война",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900197",
+    "hy": "tkayor",
+    "en": "tkayor",
+    "ru": "слабый",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900198",
+    "hy": "եghana",
+    "en": "եghana",
+    "ru": "погода",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900199",
+    "hy": "chorekshab'ti",
+    "en": "chorekshab'ti",
+    "ru": "среда",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900200",
+    "hy": "krukin",
+    "en": "krukin",
+    "ru": "жена",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900201",
+    "hy": "kaghak",
+    "en": "kaghak",
+    "ru": "ветер",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900202",
+    "hy": "gini",
+    "en": "gini",
+    "ru": "вино",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900203",
+    "hy": "tsestin",
+    "en": "tsestin",
+    "ru": "зима",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900204",
+    "hy": "gayl",
+    "en": "gayl",
+    "ru": "волк",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900205",
+    "hy": "grel",
+    "en": "grel",
+    "ru": "писать",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900206",
+    "hy": "grol",
+    "en": "grol",
+    "ru": "писатель",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900207",
+    "hy": "sarash",
+    "en": "sarash",
+    "ru": "неправильный",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  },
+  {
+    "id": "900208",
+    "hy": "yeritar",
+    "en": "yeritar",
+    "ru": "молодой",
+    "type": "user",
+    "isUserAdded": true,
+    "original_id": null
+  }
+]

@@ -13,6 +13,8 @@ import { Route as WorldRouteImport } from './routes/world'
 import { Route as OnboardingRouteImport } from './routes/onboarding'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LearnRouteImport } from './routes/learn'
+import { Route as GardenRouteImport } from './routes/garden'
+import { Route as DictionaryRouteImport } from './routes/dictionary'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiValidateRouteImport } from './routes/api/validate'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
@@ -38,6 +40,16 @@ const McpRoute = McpRouteImport.update({
 const LearnRoute = LearnRouteImport.update({
   id: '/learn',
   path: '/learn',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GardenRoute = GardenRouteImport.update({
+  id: '/garden',
+  path: '/garden',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DictionaryRoute = DictionaryRouteImport.update({
+  id: '/dictionary',
+  path: '/dictionary',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -76,6 +88,8 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/dictionary': typeof DictionaryRoute
+  '/garden': typeof GardenRoute
   '/learn': typeof LearnRoute
   '/mcp': typeof McpRoute
   '/onboarding': typeof OnboardingRoute
@@ -88,6 +102,8 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/dictionary': typeof DictionaryRoute
+  '/garden': typeof GardenRoute
   '/learn': typeof LearnRoute
   '/mcp': typeof McpRoute
   '/onboarding': typeof OnboardingRoute
@@ -101,6 +117,8 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/dictionary': typeof DictionaryRoute
+  '/garden': typeof GardenRoute
   '/learn': typeof LearnRoute
   '/mcp': typeof McpRoute
   '/onboarding': typeof OnboardingRoute
@@ -115,6 +133,8 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/dictionary'
+    | '/garden'
     | '/learn'
     | '/mcp'
     | '/onboarding'
@@ -127,6 +147,8 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/dictionary'
+    | '/garden'
     | '/learn'
     | '/mcp'
     | '/onboarding'
@@ -139,6 +161,8 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/dictionary'
+    | '/garden'
     | '/learn'
     | '/mcp'
     | '/onboarding'
@@ -152,6 +176,8 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DictionaryRoute: typeof DictionaryRoute
+  GardenRoute: typeof GardenRoute
   LearnRoute: typeof LearnRoute
   McpRoute: typeof McpRoute
   OnboardingRoute: typeof OnboardingRoute
@@ -191,6 +217,20 @@ declare module '@tanstack/react-router' {
       path: '/learn'
       fullPath: '/learn'
       preLoaderRoute: typeof LearnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/garden': {
+      id: '/garden'
+      path: '/garden'
+      fullPath: '/garden'
+      preLoaderRoute: typeof GardenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dictionary': {
+      id: '/dictionary'
+      path: '/dictionary'
+      fullPath: '/dictionary'
+      preLoaderRoute: typeof DictionaryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -240,6 +280,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DictionaryRoute: DictionaryRoute,
+  GardenRoute: GardenRoute,
   LearnRoute: LearnRoute,
   McpRoute: McpRoute,
   OnboardingRoute: OnboardingRoute,
